@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Bonjour à tous </h1>
+
+
+    <script>
+        
+        function determinerGenre (personne) {
+            
+            if (personne === 'M') {
+                return 'vous êtes du genre masculin';
+            }else if (personne === 'F') {
+                return 'vous êtes du genre feminin';
+            } else{
+                return 'mentionner votre genre entre M ou F ';
+            }
+                                    
+        }
+
+        let sexe = prompt('entrer votre sexe entre M où F');
+        let result = determinerGenre(sexe);
+        console.log(result);
+    </script>
+
+</body>
+</html>
